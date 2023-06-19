@@ -43,10 +43,10 @@ svg {
 
 /* outer petals */
 #outer-petals {
-    opacity: 0.75;
+    opacity: 1;
     --segment-fill-fill: #e3f574;
 }
 
 #outer-petals .segment-fill {
-    fill: green;
+    fill: #e3f574;
 }
