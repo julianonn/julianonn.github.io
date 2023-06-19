@@ -14,10 +14,10 @@ body {
 
 .header {
     text-align: center;
-    font-size: calc(20px + 10vmin);
+    font-size: calc(10px + 13vmin);
     font-weight: 900;
     color:  #89565f;
-    line-height: 75%;
+    line-height: 85%;
 }
 
 .name {
