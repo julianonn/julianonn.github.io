@@ -1,0 +1,52 @@
+body {
+    height: 100vh;
+    background-color: #89565f !important;
+    font-family: 'Montserrat', bold, !important;
+} 
+.container {
+    height: 85%;
+    width: 100%;
+}
+.mini {
+    height: 20%;
+}
+
+
+.header {
+    text-align: center;
+    font-size: calc(20px + 10vmin);
+    font-weight: 900;
+    color:  #89565f;
+    line-height: 75%;
+}
+
+.name {
+    text-align: right;
+    font-size: calc(10px + 6vmin);
+    font-weight: 900;
+    color:  #e3f574;
+    line-height: 75%;
+}
+
+
+/* SVG GRAPHIC */
+
+svg {
+    position: absolute;
+    z-index: -1
+}
+
+/* petals */
+.segment-fill {
+    fill: var(--segment-fill-fill);
+}
+
+/* outer petals */
+#outer-petals {
+    opacity: 0.75;
+    --segment-fill-fill: #e3f574;
+}
+
+#outer-petals .segment-fill {
+    fill: green;
+}
