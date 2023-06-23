@@ -13,6 +13,7 @@ body {
 
 
 .header {
+    padding-top: .5em;
     text-align: center;
     font-size: calc(9px + 11vmin);
     font-weight: 900;
