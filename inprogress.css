@@ -22,7 +22,7 @@ body {
 
 .name {
     text-align: right;
-    font-size: calc(10px + 6vmin);
+    font-size: calc(8px + 4vmin);
     font-weight: 900;
     color:  #e3f574;
     line-height: 75%;
