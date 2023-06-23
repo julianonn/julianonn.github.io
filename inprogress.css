@@ -33,6 +33,10 @@ body {
     font-weight: 400;
 }
 
+a {
+    text-align: right;
+    color:  #e3f574;
+}
 a:link {
     text-align: right;
     color:  #e3f574;
