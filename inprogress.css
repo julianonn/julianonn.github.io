@@ -25,7 +25,25 @@ body {
     font-size: calc(8px + 4vmin);
     font-weight: 900;
     color:  #e3f574;
-    line-height: 75%;
+    line-height: 80%;
+}
+
+.gh {
+    text-align: right;
+    font-weight: 400;
+}
+
+a:link {
+    text-align: right;
+    color:  #e3f574;
+}
+a:visited{
+    text-align: right;
+    color:  #e3f574; 
+}
+a:hover {
+    text-align: right;
+    color:  #f88dfa;
 }
 
 
