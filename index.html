@@ -1,80 +1,143 @@
-<!-- IN PROGRESS PAGE!!!! -->
+<!-- MIT LICENSE (i guess), by Julia Nonnenkamp -->
 
 <!doctype html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="inprogress.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
         <!-- Bootstrap CSS -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+        <!-- preconnect google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rock+3D&family=Roboto+Mono&display=swap"
+            rel="preload"
+            as="style"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Rock+3D&family=Roboto+Mono&display=swap"
+            rel="stylesheet"
+        />
     
-        <!-- live laugh love garamond -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
+        <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
+            rel="stylesheet"
+        />
+        <!-- custom css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css"/>
+
     </head>
 
-    <body>
-        <div class="container d-flex align-items-center justify-content-center">
+    <body data-colorscheme="reg">
 
-                <svg
-                    width="85%"
-                    height="85%"
-                    viewBox="-250 -250 500 500"
-                    xmlns="http://www.w3.org/2000/svg">
-            
-                    <defs>
-                        <g id="segment1" class="segment">
-                            <path class="segment-fill" d="M0,1 v-200 a40,40 0 0,0 -62,11 z" />
-                        </g>
-                        </g>
-                        <g id="quadrant">
-                            <use xlink:href="#segment1"  />
-                            <use xlink:href="#segment1" transform="rotate(18)" />
-                            <use xlink:href="#segment1" transform="rotate(36)" />
-                            <use xlink:href="#segment1" transform="rotate(54)" />
-                            <use xlink:href="#segment1" transform="rotate(72)" />
-                        </g>
-                        <g id="petals">
-                            <use xlink:href="#quadrant" />
-                            <use xlink:href="#quadrant" transform="rotate(90)" />
-                            <use xlink:href="#quadrant" transform="rotate(180)" />
-                            <use xlink:href="#quadrant" transform="rotate(270)" />
-                        </g>
-                    </defs>
-            
-                    <g id="wavycircle">
-                    <circle
-                        id="overlay"
-                        cx="0"
-                        cy="0"
-                        r="200"
-                        stroke="none" 
-                        fill="#e3f574"/>
-                    <use id="outer-petals" xlink:href="#petals" />
 
-                    <animateTransform
-                        attributeName="transform"
-                        attributeType="XML"
-                        type="rotate"
-                        from="0 0 0"
-                        to="360 0 0"
-                        dur="10s"
-                        repeatCount="indefinite" />
-                    </g>
+        <div id="fixed-main-container" class="container-fluid container-greeting">
 
-                </svg>
-                <p class="header">BE BACK<br>SOON!</p>
-        </div> <!-- container 1 -->
+            <section id="greeting">
+                <div data-sticky>
+                    <div class="container-fluid container-greeting">
+                        <p>Hello! My name is </p><br>
+                        <h1 id="typewriter"></h1>
+                    </div>
+                </div>
+            </section>
+            <section id="about">
+                <div data-sticky>
+                    <div class="container-fluid _10vh_bmargin">
+                        <h3 class="section-header">About Me</h3><br>
+                        <p>
+                            I'm a Georgetown senior studying Math and Computer Science with a concentration in <a class="par_link" href="https://techandsociety.georgetown.edu/" target="_blank">Tech, Ethics, and Society</a>.
+                        </p><br>
+                        <p>
+                            I lead the Data Analytics team for 
+                            <a class="par_link" href="https://www.thecorp.org/" target="_blank">The Corp</a>
+                            , largest entirely student-run nonprofit in the world. 
+                            In August 2023, I received a 
+                            <a class="par_link" href="https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/" target="_blank">Fritz Family Fellowship</a>
+                            to work on genetic data privacy research with Georgetown's 
+                            <a class="par_link" href="https://mdi.georgetown.edu/" target="_blank">Massive Data Institue</a>.
+                        </p><br>
+                        <p>
+                            When I'm not doing all that, I love sewing, hiking, and visiting different D.C. farmers' markets every weekend! 
+                        </p>
+                        <ul class="social-icon">
+                            <li>
+                                <a class="no-style" href="https://www.linkedin.com/in/jsnonnenkamp">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="no-style" href="https://github.com/julianonn/">
+                                    <i class="fa fa-github"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="projects">
+                <div data-sticky>
+                    <div class="container-fluid">
+                        <h3 class="section-header">Projects</h3>
+                        <br>
+                        <ul class="scroll-menu">
+                            <li>
+                                <a class="no-style" href="https://github.com/julianonn/NewTimeClockConverter">
+                                    <p class="disappear-on-hover">
+                                        NewTimeClockConverter
+                                    </p>
+                                    <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
+                                        a python/tkinter application that parses, reformats, and analyzes payroll files for The Corp.
+                                    </marquee>
+                                </a>
+                            </li>
 
-        <div class="container mini">
-                <p class="name">&lt;3 julia</p>
-                <p style="text-align:right"><a href="https://github.com/julianonn" style="font-color:#e3f574">my github</a></p>
-        </div> <!-- container 2 -->
+                            <!--<li>
+                                <p class="disappear-on-hover">
+                                    lexiconundrum
+                                </p>
+                                <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
+                                    a pretty stupid Flask REST API that gets a random really long word from the Oxford English Dictionary.
+                                </marquee>
+                            </li>
+
+                            <li>
+                                <p class="disappear-on-hover">
+                                    colorgen
+                                </p>
+                                <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
+                                    a python library 
+                                </marquee>
+                            </li> -->
+
+                            <li>
+                                <a class="no-style" href="https://codepen.io/julianonn/pen/BavXJbE?editors=1111">
+                                    <p class="disappear-on-hover">
+                                    (p.s. this marquee menu...)
+                                    </p>
+                                    <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
+                                        check out this codepen &#9786;
+                                    </marquee>
+                                <a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div> <!-- #fixed-main-container -->
+        
 
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
+    <script src="js/lenis_ctrl.js"></script>
+    <script src="js/typewriter.js"></script>
 
     </body>
 </html>

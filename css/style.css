@@ -1,0 +1,336 @@
+
+
+/*
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rock+3D&display=swap');
+*/
+
+
+
+
+html {
+    font-size: 100%;
+    height: 100vh;
+    /* base 16 setup */
+}   
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    /*font-size: 1.5rem;*/
+    font-size: var(--font-size);
+    line-height: 1.2;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+  
+h1, h2, h3 {
+    font-family: inherit;;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+}
+
+p {
+    font-family: inherit;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+b, strong {
+    font-weight: 500;
+}
+
+
+a.par_link{
+    color:  var(--pagelinktextcolor);
+    background-color: transparent;
+    font-weight: regular;
+}
+
+a.par_link:hover {
+    color: var(--pagelinkhovercolor);
+    font-weight: bold;
+}
+
+.section-header{
+    font-size: clamp(24px, 3vw, 30px);
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #555555;
+    --creme: #f5ebd2;
+    --eggshell: #F7F1DE;
+    --sea-green: #008F66;
+    --azul: #1E6DAE;
+    --lapis1: #1B629D;
+    --lapis2: #18578C;
+    --brick-red: #B72A2A;
+    --font-size: clamp(16px, 3vw, 24px);
+    --li_project_height: 10vh;
+}
+
+
+[data-colorscheme=reg] {
+    --pagebgcolor: var(--eggshell);
+    --pagetextcolor: var(--azul);
+    --overlaytextcolor: var(--sea-green);
+    --menubgcolor: var(--brick-red);
+    --menutextcolor: var(--eggshell);
+    --pagelinktextcolor: var(--azul);
+    --pagelinkhovercolor: var(--brick-red);
+    --marqueebgcolor: var(--azul);
+    --marqueetextcolor: var(--eggshell);
+}
+
+
+/* html */
+html {
+    scroll-behavior: smooth;
+    min-height: 100%;
+}
+  
+/* body */
+body {
+    position: relative;
+    margin: 0;
+    color: var(--pagetextcolor);
+    background-color: var(--pagebgcolor);
+    min-height: 100%;
+    scroll-padding-top: 65px;
+    transition: color 500ms ease, background-color 500ms ease;
+}
+
+
+/* container styles */
+.full-width {
+    margin:0 !important;
+}
+
+._100vh {
+    height: 100vh;
+}
+
+.half-page {
+    height: 50vh;
+}
+
+/*
+section {
+    position:relative;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin:auto;
+    height: auto;
+}*/
+
+section {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+    /*-webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;*/
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: flex-start;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+
+
+/* text */
+
+#typewriter {
+    font-family: 'Rock 3D', cursive;
+    font-size: clamp(10vw, 7rem, 15vw); /*clamp(10vw, 10vw, 9rem);   */
+    /*font-size: 96px; 
+    font-size: clamp(24px, 15vw, 128px);*/
+    /*margin: 10px 50px;  /* CHANGE */
+    letter-spacing: -.75rem !important; 
+    font-weight: 550;
+}
+
+.disappear{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 2s;
+}
+.appear{
+    opacity:1;
+    visibility: visible;
+}
+
+
+#fixed-target-top {
+    position: absolute;
+    top: -80vh;
+    bottom: -80vh;
+    right: 0;
+    left: 0;
+}
+
+.extra_padding {
+   padding: 10em, 0, 10em, 0;
+}
+
+
+
+html.lenis {
+    height: auto;
+}
+  
+.lenis.lenis-smooth {
+    scroll-behavior: auto;
+}
+  
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+  
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+  
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+
+[data-sticky] {
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    top: 15vh;
+}
+
+[data-sticky=sm] {
+    position: relative;
+    overflow: hidden
+}
+
+/* ------------- SCROLL MENU ------------- */
+
+ul.scroll-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    height: auto;
+}
+
+ul.scroll-menu li {
+    width: 100%;
+    height: var(--li_project_height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:inherit;
+    margin:inherit;
+    list-style: inherit;
+}
+
+ul.scroll-menu li:hover .disappear-on-hover {
+    display: none;
+}
+
+ul.scroll-menu li:hover .appear-on-hover {
+    display: flex;
+}
+
+.disappear-on-hover {
+    display: flex;
+}
+
+.appear-on-hover {
+    display: none;
+}
+
+
+ul.scroll-menu li marquee {
+    background-color: var(--marqueebgcolor);
+    color: var(--marqueetextcolor);
+    margin:inherit;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1rem !important;
+}
+
+ul.scroll-menu li p {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding:inherit;
+    padding-left: 1rem;
+    margin:inherit;
+    border-bottom: 2px solid var(--azul);
+}
+
+ul.scroll-menu li:nth-child(1) p {
+    border-top: 2px solid var(--azul);
+}
+
+.no-style {
+    all: inherit;
+}
+
+
+.container-greeting {
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+}
+
+._10vh_bmargin {
+    margin-bottom: 10vh;
+}
+
+
+/* using Font Awesome by Lauren Clark (https://gist.github.com/laurenclark/0ace1efe231ce8f4aab9a229fe9a8208) */
+
+.fa-github {
+    padding: 2rem;
+    color: var(--pagetextcolor);
+}
+
+.fa-linkedin {
+    padding: 2rem;
+    color: var(--pagetextcolor);
+}
+
+ul.social-icon {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: max(50px, 5vh);
+}
+ul.social-icon li {
+    vertical-align: top;
+    display: inline;
+    height: 100px;
+}
