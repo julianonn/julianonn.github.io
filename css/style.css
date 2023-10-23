@@ -147,7 +147,8 @@ section {
     display: -ms-flexbox;
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    height: auto;
+    min-height: 120vh;
     /*-webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -312,18 +313,17 @@ ul.scroll-menu li:nth-child(1) p {
 
 /* using Font Awesome by Lauren Clark (https://gist.github.com/laurenclark/0ace1efe231ce8f4aab9a229fe9a8208) */
 
-.fa-github {
-    padding: 2rem;
+.icon {
+    padding: 1rem 2rem;
+    height: auto;
     color: var(--pagetextcolor);
 }
-
-.fa-linkedin {
-    padding: 2rem;
-    color: var(--pagetextcolor);
-}
-
-.fa:hover {
+.icon:hover {
     color: var(--pagelinkhovercolor);
+}
+
+.fa {
+    height: 100%;
 }
 
 ul.social-icon {
