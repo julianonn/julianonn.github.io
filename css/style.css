@@ -46,6 +46,17 @@ p:last-child {
     margin-bottom: 0;
 }
 
+div.footer{
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: inherit;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 5vh;
+    color: var(--pagetextcolor)
+}
+
 b, strong {
     font-weight: 500;
 }
@@ -148,7 +159,7 @@ section {
     display: flex;
     flex-direction: column;
     height: auto;
-    min-height: 120vh;
+    min-height: 180vh;
     /*-webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -225,7 +236,7 @@ html.lenis {
     position: -webkit-sticky;
     position: sticky;
     width: 100%;
-    top: 15vh;
+    top: 8vh;
 }
 
 [data-sticky=sm] {
@@ -301,13 +312,17 @@ ul.scroll-menu li:nth-child(1) p {
 }
 
 
-.container-greeting {
-    margin-top: 10vh;
-    margin-bottom: 20vh;
-}
-
 ._10vh_bmargin {
     margin-bottom: 10vh;
+}
+._20vh_bmargin {
+    margin-bottom: 20vh;
+}
+._10vh_tmargin {
+    margin-top: 10vh;
+}
+._20vh_tmargin {
+    margin-top: 10vh;
 }
 
 
