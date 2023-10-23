@@ -322,6 +322,10 @@ ul.scroll-menu li:nth-child(1) p {
     color: var(--pagetextcolor);
 }
 
+.fa:hover {
+    color: var(--pagelinkhovercolor);
+}
+
 ul.social-icon {
     width:100%;
     display: flex;
