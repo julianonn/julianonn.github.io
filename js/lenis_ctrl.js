@@ -22,13 +22,5 @@ function raf(time) {
 
 requestAnimationFrame(raf)
 
-$(window).on('load', function(){ 
-var Webflow = Webflow || [];
 
-Webflow.push(function() {
-  Webflow.require("ix2");
-	console.log("Run");
-  
-  Webflow.ix2.run("blob-click", document.getElementById("asd"));
-});
 });
