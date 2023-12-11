@@ -280,6 +280,11 @@ ul.scroll-menu li:hover .appear-on-hover {
     display: none;
 }
 
+.appear-on-hover:active {
+    background-color: var(--pagelinkhovercolor);
+}
+
+
 
 ul.scroll-menu li marquee {
     background-color: var(--marqueebgcolor);
@@ -301,6 +306,8 @@ ul.scroll-menu li p {
     padding-left: 1rem;
     margin:inherit;
     border-bottom: 2px solid var(--azul);
+    border-right: 2px solid var(--azul);
+    border-left: 2px solid var(--azul);
 }
 
 ul.scroll-menu li:nth-child(1) p {
@@ -324,6 +331,30 @@ ul.scroll-menu li:nth-child(1) p {
 ._20vh_tmargin {
     margin-top: 10vh;
 }
+
+
+
+/* ------------- new social buttons ------------- */
+
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: right;
+}
+
+.social-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 20px;
+    background-color: var(--pagetextcolor); /* Shaded background color */
+    color: var(--pagebgcolor); /* White text color */
+    text-decoration: none;
+    border-radius: 0px;
+}
+.social-button:hover {
+    background-color: var(--pagelinkhovercolor); /* Add a darker background on hover */
+}
+
 
 
 /* using Font Awesome by Lauren Clark (https://gist.github.com/laurenclark/0ace1efe231ce8f4aab9a229fe9a8208) */
