@@ -68,7 +68,7 @@ a.par_link{
     font-weight: regular;
 }
 
-a.par_link:hover {
+a.par_link:hover, a.par_link.hover_effect {
     color: var(--pagelinkhovercolor);
     font-weight: bold;
 }
@@ -272,6 +272,14 @@ ul.scroll-menu li:hover .appear-on-hover {
     display: flex;
 }
 
+ul.scroll-menu li.hover_effect .disappear-on-hover {
+    display: none;
+}
+
+ul.scroll-menu li.hover_effect .appear-on-hover {
+    display: flex;
+}
+
 .disappear-on-hover {
     display: flex;
 }
@@ -280,9 +288,6 @@ ul.scroll-menu li:hover .appear-on-hover {
     display: none;
 }
 
-.appear-on-hover:active {
-    background-color: var(--pagelinkhovercolor);
-}
 
 
 
@@ -295,6 +300,10 @@ ul.scroll-menu li marquee {
     flex-direction: column;
     justify-content: center;
     padding-left: 1rem !important;
+}
+
+ul.scroll-menu li marquee:active {
+    background-color: var(--pagelinkhovercolor);
 }
 
 ul.scroll-menu li p {
@@ -351,7 +360,7 @@ ul.scroll-menu li:nth-child(1) p {
     text-decoration: none;
     border-radius: 0px;
 }
-.social-button:hover {
+.social-button:hover, .social-button.hover_effect{
     background-color: var(--pagelinkhovercolor); /* Add a darker background on hover */
 }
 
