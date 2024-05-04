@@ -1,25 +1,9 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 
 
 <template>
-  <!--<div class="container full-height" id="julia">
-    <div class="row h-100">
-      <div class="col-4 d-flex justify-content-center align-items-center" id="julia-pic">
-        picture
-      </div>
-      <div class="col-8 d-flex justify-content-center align-items-center" id="julia-text">
-          <div class="row" id="julia-text-title">
-            row1
-          </div>
-          <div class="row" id="julia-text-body">
-            row2
-          </div>
-      </div>
-    </div>  
-    </div>-->
 
     <div class="container-fluid d-flex justify-content-center h-100">
       
@@ -42,7 +26,7 @@ import HelloWorld from './components/HelloWorld.vue'
             <p class="text-start">
               I'm just about to graduate from Georgetown University, where I'm a 
               <a href="https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/">Fritz Fellow</a> 
-              and work with the 
+              and I work with the 
               <a href="https://mdi.georgetown.edu/">Massive Data Institute</a> 
               auditing forensic DNA analysis software.
             </p>

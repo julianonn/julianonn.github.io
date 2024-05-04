@@ -8,35 +8,35 @@
 
 @font-face {
   font-family: 'Cooper BT';
-  src: url('fonts/cooperli.ttf') format('truetype');
+  src: url('/fonts/cooperli.ttf') format('truetype');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Cooper BT';
-  src: url('fonts/cooperm.ttf') format('truetype');
+  src: url('/fonts/cooperm.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cooper BT';
-  src: url('fonts/coopermi.ttf') format('truetype');
+  src: url('/fonts/coopermi.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Cooper BT';
-  src: url('fonts/cooperb.ttf') format('truetype');
+  src: url('/fonts/cooperb.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cooper BT Bold Italic';
-  src: url('fonts/cooperbi.ttf') format('truetype');
+  src: url('/fonts/cooperbi.ttf') format('truetype');
   font-weight: 700;
   font-style: italic;
 }
