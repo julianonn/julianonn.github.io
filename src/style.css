@@ -1,0 +1,205 @@
+/* FONTS */
+@font-face {
+  font-family: 'Cooper BT';
+  src: url('/fonts/cooperl.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper BT';
+  src: url('fonts/cooperli.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cooper BT';
+  src: url('fonts/cooperm.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper BT';
+  src: url('fonts/coopermi.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cooper BT';
+  src: url('fonts/cooperb.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cooper BT Bold Italic';
+  src: url('fonts/cooperbi.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
+:root {
+  --font-family: 'Cooper BT', serif; /*Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;*/
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: var(--background-color) !important;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --background-color: #F1D7D7;
+  --text-color: #000000;
+  --accent_color: #A6043F;
+  --accent_color_gray: #696969;
+
+  --reg-text-font-size: clamp(10px, 3.5vw, 24px);
+
+}
+
+
+div {
+  font-size: var(--reg-text-font-size)
+}
+
+a {
+  font-weight: 500;
+  color: var(--accent_color);
+  text-decoration: inherit;
+}
+a:hover {
+  color: var(--accent_color_gray);
+}
+
+a:invalid {
+  color: var(--accent_color);
+}
+
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+p, ul {
+  font-size: var(--reg-text-font-size)
+}
+
+
+h1 {
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: clamp(36px, 5vw, 96px);
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: clamp(36px, 9vw, 64px);
+  }
+}
+
+h2 {
+  font-weight: 500;
+  line-height: 1.1;
+  font-size: clamp(16px, 3.5vw, 40px);
+}
+
+@media (max-width: 768px) {
+  h2 {
+    font-size: clamp(14px, 6vw, 28px);
+  }
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+  padding: 2em;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.section {
+  margin-bottom: 10vh; /* Adjust this value to your liking */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.spacer {
+  height: 20px; /* Adjust this value to your liking */
+}
+
+.full-height {
+  height:100vh;
+}
+
+.container-fluid {
+  display: flex;
+  flex-direction: column;
+}
+
+
+med-weight {
+  font-weight: 500;
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-text {
+  font-size: 1rem !important;
+  color: var(--text-color);
+}
+
+.align-right {
+  text-align: right !important;
+  direction: rtl !important;
+}
+
+.tab-surround {
+  padding-left: 10px;
+  padding-right: 10px;
+}
