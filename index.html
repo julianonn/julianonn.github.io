@@ -1,182 +1,24 @@
-<!-- 
-    Julia Nonnenkamp, 2023
-
-    This file is part of julianonn.github.io, a free software. You can redistribute it and/or modify it under the terms of the GNU General Public 
-    License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
-    julianonn.github.io is distributed WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR 
-    PURPOSE. See the GNU General Public License for more details.
--->
-
-
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <!--<link rel="icon" type="image/svg+xml" href="/vite.svg" />-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Julia Nonnenkamp</title>
 
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KNK6FJL5JP"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-        
-          gtag('config', 'G-KNK6FJL5JP');
-        </script>
-                
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-        <!-- preconnect google fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Rock+3D&family=Roboto+Mono&display=swap"
-            rel="preload"
-            as="style"
-            crossorigin
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Rock+3D&family=Roboto+Mono&display=swap"
-            rel="stylesheet"
-        />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="app"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-        <link
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css"
-            rel="stylesheet"
-        />
-        <!-- custom css -->
-        <link rel="stylesheet" type="text/css" href="css/style.css"/>
-
-    </head>
-
-    <body data-colorscheme="reg">
-
-
-        <div id="fixed-main-container" class="container-fluid container-greeting">
-
-            <section id="greeting">
-                <div data-sticky>
-                    <div class="container-fluid _20vh_tmargin">
-                        <p>Hello! My name is </p><br>
-                        <h1 id="typewriter"></h1>
-                    </div>
-                </div>
-            </section>
-            <section id="about">
-                <div data-sticky>
-                    <div class="container-fluid _10vh_tmargin _20vh_bmargin">
-                        <h3 class="section-header">About Me</h3><br>
-                        <p>
-                            I'm a Georgetown senior studying Math and Computer Science with a concentration in <a class="par_link" href="https://techandsociety.georgetown.edu/" target="_blank">Tech, Ethics, and Society</a>.
-                        </p><br>
-                        <p>
-                            I lead the Data Analytics team for 
-                            <a class="par_link" href="https://www.thecorp.org/" target="_blank">The Corp</a>
-                            , largest entirely student-run nonprofit in the world. 
-                            In August 2023, I received a 
-                            <a class="par_link" href="https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/" target="_blank">Fritz Family Fellowship</a>
-                            to work on genetic data privacy research with Georgetown's 
-                            <a class="par_link" href="https://mdi.georgetown.edu/" target="_blank">Massive Data Institute</a>.
-                        </p><br>
-                        <p>
-                            When I'm not doing all that, I love sewing, hiking, and visiting different D.C. farmers' markets every weekend! 
-                        </p>
-                        <div class="social-buttons">
-                            <a href="https://www.linkedin.com/in/jsnonnenkamp" class="social-button">linkedin</a>
-                            <a href="https://github.com/julianonn/" class="social-button">github</a>
-                        </div>
-                        <!--<ul class="social-icon">
-                            <li>
-                                <a class="no-style icon" href="https://www.linkedin.com/in/jsnonnenkamp">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="no-style icon" href="https://github.com/julianonn/">
-                                    <i class="fa fa-github"></i>
-                                </a>
-                            </li>
-                        </ul>-->
-                        <ul class="center"></ul>
-                    </div>
-                </div>
-            </section>
-            <section id="projects">
-                <div data-sticky>
-                    <div class="container-fluid">
-                        <h3 class="section-header">Projects & Research</h3>
-                        <br>
-                        <ul class="scroll-menu">
-                            <li>
-                                <a class="no-style" href="https://public.tableau.com/app/profile/julia.nonn/viz/dc-parking-tickets/GeospatialDCParking">
-                                    <p class="disappear-on-hover">
-                                        dc-parking-tickets
-                                    </p>
-                                    <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
-                                        geospatial exploratory data analysis of DC parking violation data in Python + geopandas + Tableau
-                                    </marquee>
-                                </a>
-                            </li>
-                            <li>
-                                <!--<a class="no-style" href="">-->
-                                    <p class="disappear-on-hover">
-                                        research poster: "Risk Mapping in Forensic Genetic Analysis"
-                                    </p>
-                                    <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
-                                        [link coming soon]
-                                    </marquee>
-                                <!--</a>-->
-                            </li>
-                            <li>
-                                <a class="no-style" href="https://github.com/julianonn/NewTimeClockConverter">
-                                    <p class="disappear-on-hover">
-                                        NewTimeClockConverter
-                                    </p>
-                                    <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
-                                        a python/tkinter application that parses, reformats, and analyzes payroll files for The Corp
-                                    </marquee>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="no-style" href="https://lexiconundrum.pythonanywhere.com/">
-                                    <p class="disappear-on-hover">
-                                        lexiconundrum
-                                    </p>
-                                    <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
-                                        a pretty stupid Flask REST API that gets a random really long word from the Oxford English Dictionary.
-                                    </marquee>
-                                </a>
-                            </li>
-
-                            <li>
-                                <a class="no-style" href="https://codepen.io/julianonn/pen/BavXJbE?editors=1111">
-                                    <p class="disappear-on-hover">
-                                    (p.s. this marquee menu...)
-                                    </p>
-                                    <marquee class="appear-on-hover" scrollamount="15" onmouseover="this.start()" onmouseout="this.stop()">
-                                        check out this codepen &#9786;
-                                    </marquee>
-                                <a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
-            <div class="footer"><p>&copy; 2023 Julia Nonnenkamp</p></div>
-
-        </div> <!-- #fixed-main-container -->
-        
-
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script> 
-    <script src="js/lenis_ctrl.js"></script>
-    <script src="js/typewriter.js"></script>
-    <script src="js/mobile-hover.js"></script>
-
-    </body>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>
