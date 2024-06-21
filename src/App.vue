@@ -1,7 +1,3 @@
-<script setup>
-</script>
-
-
 
 <template>
 
@@ -21,21 +17,22 @@
           <div class="spacer" />
           <div class="row" id="julia-text-body">
             <p class="text-start">
-              I'm an incoming MS student in computer science at the University of Wisconsin-Madison interested in human-centered security & privacy research.
+              I'm an incoming MS <small><em>(and maybe Ph.D.??)</em></small> student in computer science at the University of Wisconsin-Madison 
+              <a href="https://madsp.cs.wisc.edu/" target="_blank">Security & Privacy Research Group</a> interested in human-centered privacy research & policy.
             </p>
             <p class="text-start">
               I'm just about to graduate from Georgetown University, where I'm a 
-              <a href="https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/">Fritz Fellow</a> 
-              and I work with the 
-              <a href="https://mdi.georgetown.edu/">Massive Data Institute</a> 
-              auditing forensic DNA analysis software.
+              <a href="https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/" target="_blank">Fritz Fellow</a> 
+              working with the
+              <a href="https://mdi.georgetown.edu/" target="_blank">Massive Data Institute</a> 
+              auditing forensic DNA analysis software systems.
             </p>
           </div>
           <div class="spacer" />
           <div class="row w-100" id="contact-links">
-            <a href="https://github.com/julianonn">github</a>
+            <a href="https://github.com/julianonn" target="_blank">github</a>
             <div class="tab-surround">|</div>
-            <a href="https://www.linkedin.com/in/jsnonnenkamp/">linkedin</a>
+            <a href="https://www.linkedin.com/in/jsnonnenkamp/" target="_blank">linkedin</a>
           </div>
         </div>
 
@@ -50,12 +47,11 @@
           During criminal investigation, law enforcement collects genetic evidence and uses a class of tools 
           called probabilistic genotyping software (PGS) to identify and validate potential persons of interest.
           The wider scientific and regulatory community has been aware of transparency issues related to commercial PGS tools
-          for several years.
-          
-          We seek to better understand the available tools, audit them, and generate synthetic 
+          for several years. In this multi-year project with the Massive Data Institute and GULC's Center for Privacy and 
+          Technology, we seek to better understand the available tools, audit them, and generate synthetic 
           data to help mitigate the challenge of limited data for auditing. 
         </p>
-        <p><med-weight>Associated institutions:</med-weight> Massive Data Institute & Center for Privacy and Technology, Georgetown University</p>
+        <!--<p><med-weight>Associated institutions:</med-weight> Massive Data Institute & Center for Privacy and Technology, Georgetown University</p>
         <div class="spacer" />
         <h2>Posters & Talks</h2>
         <ul>
@@ -73,7 +69,7 @@
             <i>Risk Mapping in Forensic DNA Analysis</i>
             <ul><li>Poster presentation, MDI Research Showcase, December 2023</li></ul>
           </li>
-        </ul>
+        </ul> -->
       </div>
 
 
@@ -84,6 +80,11 @@
         <div class="spacer" />
         <ul>
           <li>
+            <a>DataAccess</a>
+            <ul><li>PostgreSQL data mart & <a href="https://www.mage.ai/">Mage</a> ETL pipelines centralizing point-of-sale data for <a href="https://www.thecorp.org/">The Corp</a></li></ul>
+          </li>
+          <div class="spacer" />
+          <li>
             <a href="https://github.com/julianonn/dc-parking-tickets">dc-parking-tickets</a>
             <ul><li>Geospatial preprocessing, EDA, & visualization of DC parking violations</li></ul>
           </li>
@@ -93,19 +94,14 @@
             <ul><li>Python/tkinter application that parses, reformats, & analyzes payroll files for <a href="https://www.thecorp.org/">The Corp</a></li></ul>
           </li>
           <div class="spacer" />
-          <li>
-            <a>DataAccess</a>
-            <ul><li>PostgreSQL data mart & <a href="https://www.mage.ai/">Mage</a> ETL pipelines centralizing point-of-sale data for <a href="https://www.thecorp.org/">The Corp</a></li></ul>
-          </li>
-          <div class="spacer" />
-          <li>
+          <!--<li>
             <a href="https://github.com/julianonn/lexiconundrum">lexiconundrum</a>
             <ul><li>Very silly Flask REST API that retrieves absurdly long words & definitions from the Oxford English Dictionary</li></ul>
           </li>
           <div class="spacer" />
           <li>
             <a href="https://codepen.io/julianonn/pen/BavXJbE?editors=1111">Simple marquee menu</a>
-          </li>
+          </li>-->
         </ul>
       </div>
 
@@ -114,11 +110,11 @@
 
     <footer>
       <p class="footer-text">
-        Copyright &copy; 2024 Julia Nonnenkamp
+        <!--copyright--> &copy; 2024 Julia Nonnenkamp
         &Tab;
         |
         &Tab;
-        Check out this site's <a href="https://github.com/julianonn/julianonn.github.io">GitHub</a>
+        site src code on <a href="https://github.com/julianonn/julianonn.github.io">github</a>
       </p>
     </footer>
 
