@@ -17,7 +17,7 @@
           <div class="spacer" />
           <div class="row" id="julia-text-body">
             <p class="text-start">
-              I'm an research MS <small><em>(and maybe Ph.D.?)</em></small> student in computer science at the University of Wisconsin-Madison 
+              I'm a research MS <small><em>(and maybe Ph.D.?)</em></small> student in computer science at the University of Wisconsin-Madison 
               <a href="https://madsp.cs.wisc.edu/" target="_blank">Security & Privacy Research Group</a> advised by Dr. Rahul Chatterjee. 
               I'm interested in privacy assurance, risk assessment, and applications of privacy-preserving protocols to law and policy.
             </p>
