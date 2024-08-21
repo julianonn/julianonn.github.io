@@ -18,12 +18,12 @@
           <div class="row" id="julia-text-body">
             <p class="text-start">
               I'm a research MS <small><em>(and maybe Ph.D.?)</em></small> student in computer science at the University of Wisconsin-Madison 
-              <a href="https://madsp.cs.wisc.edu/" target="_blank">Security & Privacy Research Group</a> advised by Dr. Rahul Chatterjee. 
+              <a href="https://madsp.cs.wisc.edu/" target="_blank">Security & Privacy Research Group</a>. 
               I'm interested in privacy assurance, risk assessment, and applications of privacy-preserving protocols to law and policy.
             </p>
             <p class="text-start">
               I just finished up undergrad at Georgetown University, where I studied math and computer science
-              (and became a policy wonk by osmosis). I received a
+              and became a tech policy wonk by osmosis. I received a
               <a href="https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/" target="_blank">Fritz Fellowship</a> 
               from GU's 
               <a href="https://techandsociety.georgetown.edu/">Tech & Society Initiative</a>, 
@@ -31,6 +31,8 @@
               <a href="https://mdi.georgetown.edu/" target="_blank">Massive Data Institute</a> 
               and the GU Law Center auditing forensic DNA analysis software systems.
             </p>
+            <!--p class="text-start"><b>Currently dabbling in:</b> iOS dynamic instrumentation</p>
+            <p class="text-start"><b>ISO:</b> solo hobbies for the long Wisconsin winter</p>-->
           </div>
           <div class="spacer" />
           <div class="row w-100" id="contact-links">
