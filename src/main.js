@@ -1,13 +1,15 @@
 import { createApp } from 'vue';
 import App from './App.vue';
+import Navbar from './components/Navbar.vue';
 
-// import './assets/css/bootstrap.min.css';
-// // import './assets/js/bootstrap.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.min.js';
 
-
 import './style.css';
 
+const app = createApp(App);
 
-createApp(App).mount('#app')
+// Register Navbar globally
+app.component('Navbar', Navbar);
+
+app.mount('#app');

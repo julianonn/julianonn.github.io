@@ -1,5 +1,12 @@
+<script setup lang="ts">
+import Navbar from './components/Navbar.vue';
+
+</script>
+
 
 <template>
+
+   <!---<Navbar /> --->
 
     <div class="container-fluid d-flex justify-content-center">
       
@@ -21,7 +28,9 @@
               <a href="https://madsp.cs.wisc.edu/" target="_blank">Security & Privacy Research Group</a> working with 
               <a href="https://pages.cs.wisc.edu/~chatterjee/" target="_blank">Dr. Rahul Chatterjee</a>. 
 
-              I'm interested in software security for everyday people, mitigations for tech-facilitated abuse &amp; harrassment, and privacy law &amp; policy.
+              I'm interested in software security for everyday people, mitigations for tech-facilitated abuse &amp; harrassment, and the commercial landscape of surveillance technology.
+              I volunteer at the <a href="https://techclinic.cs.wisc.edu/" target="_blank">Madison Tech Clinic</a> where we provide trauma-informed, cybersecurity assistance to survivors of 
+              intimate partner violence (IPV) around Wisconsin.
               
             </p>
             <p class="text-start">
@@ -33,6 +42,7 @@
               <a href="https://mdi.georgetown.edu/" target="_blank">Massive Data Institute</a> 
               and the 
               <a href="https://www.law.georgetown.edu/privacy-technology-center/" target="_blank">Center on Privacy &amp; Technology</a> (Georgetown Law) auditing forensic DNA analysis software systems.
+              I interned at the United States Office of Management and Budget (OMB) where I learned an <em>enormous</em> amount about how make government and its digital systems work better for the people we serve.
             </p>
             <!--<p class="text-start"><b>Currently dabbling in:</b> dynamic instrumentation</p>
             <p class="text-start"><b>ISO:</b> solo hobbies for the long Wisconsin winter</p>-->
@@ -41,12 +51,12 @@
           <div class="spacer-40" />
 
           <div class="row">
-            <div id="what-im-up-to">
-              <p class="text-start"><b><em>What I'm up to:</em></b></p>
+            <div id="ongoing-projects">
+              <p class="text-start"><b><em>Ongoing Projects</em></b></p>
               <ul class="custom">
-                <li class="disco">Volunteering at the <a href="https://techclinic.cs.wisc.edu/" target="_blank">Madison Tech Clinic</a>, providing cybersecurity assistance to survivors of intimate partner violence (IPV)</li>
+                <li class="disco">Developing protocols for employing data downloads (i.e., <a href="https://takeout.google.com/" target="_blank">Google Takeout</a>) in tech clinic settings</li>
+                <li class="disco">Collaborating on a new project understanding how adults with intellectual and developemental disabilities navigate security notifications and warnings</li>
                 <li class="disco">Dabbling in mobile dynamic instrumentation &amp; reverse engineering</li>
-                <li class="disco">Furiously writing about cool, novel use cases for Data Subject Access Request Packages</li>
               </ul>
             </div>
           </div>
