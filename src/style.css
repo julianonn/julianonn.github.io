@@ -98,6 +98,61 @@ p, ul {
   font-size: var(--reg-text-font-size)
 }
 
+ul.custom{
+  /*padding-left: 1em; */
+  list-style-type: none; 
+  /* text-indent: -1em;  */
+  padding-left: 3em;
+}
+
+ul.custom li::before {
+  display: inline-block;
+  width: 1.5em;
+  margin-left: -2em;
+}
+ul.custom li {
+  margin-bottom: 0.5em;
+}
+
+ul.dash {
+  list-style-type: none; /* Remove default bullets */
+  padding-left: 1em; /* Add some padding to align the dashes */
+}
+
+ul.dash li::before {
+  content: "-"; /* Add the dash */
+  margin-right: 0.5em; /* Add some space between the dash and the text */
+}
+
+li.disco::before {
+  content: "\1FAA9" !important;
+  margin-right: 0.5em;
+}
+
+li.star::before {
+  content: "\2B50" !important; 
+  margin-right: 0.5em;
+}
+
+li.star2::before {
+  content: "\1F31F" !important;
+  margin-right: 0.5em;
+}
+
+li.spiral::before {
+  content: "\1F300" !important;
+  margin-right: 0.5em;
+}
+
+li.purple-heart1::before {
+  content: "\1F49C" !important;
+  margin-right: 0.5em;
+}
+
+li.purple-heart2::before {
+  content: "\1F49F" !important;
+  margin-right: 0.5em;
+}
 
 h1 {
   font-weight: 500;
@@ -165,8 +220,11 @@ button:focus-visible {
   text-align: left;
 }
 
-.spacer {
+.spacer-20 {
   height: 20px; 
+}
+.spacer-40{
+  height: 40px; 
 }
 
 .full-height {
@@ -198,9 +256,4 @@ footer {
 .align-right {
   text-align: right !important;
   direction: rtl !important;
-}
-
-.tab-surround {
-  padding-left: 10px;
-  padding-right: 10px;
 }
