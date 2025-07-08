@@ -20,12 +20,75 @@ p, li, span, div,
     padding-bottom: 2.5rem; // Adjust padding for Cooper font
 }
 
+.more-info {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
 
 h1 {
     font-size: 3rem; 
 }
 h2 {
     font-size: 2rem; 
+}
+
+// Profile image customizations
+.profile {
+  // Remove shadow from profile image
+  img {
+    box-shadow: none !important;
+  }
+  
+  // On large screens, maintain current layout but prevent text wrapping
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    
+    &.float-right {
+      float: right;
+      margin-left: 1rem;
+      clear: both;
+    }
+  }
+  
+  // small screens
+  @media (max-width: 767px) {
+    width: 100% !important;
+    float: none !important;
+    margin: 0 0 2rem 0 !important;
+    text-align: center;
+    order: -1; // Move above header when parent uses flexbox
+    
+    img {
+      width: 45% !important;
+      max-width: 200px;
+      height: auto;
+      display: inline-block;
+    }
+  }
+}
+
+// Adjust post layout for small screens
+@media (max-width: 767px) {
+  .post {
+    display: flex;
+    flex-direction: column;
+    
+    .post-header {
+      order: 1; // Header comes after profile image
+      text-align: center; // Center the header content
+      
+      .post-title {
+        text-align: center; // Center the title specifically
+      }
+    }
+    
+    article {
+      order: 2; // Content comes last
+    }
+  }
 }
 // // Apply Cooper to specific academic elements
 // .post-content,
