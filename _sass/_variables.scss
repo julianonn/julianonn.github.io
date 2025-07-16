@@ -6,9 +6,12 @@
 @use "sass:color";
 
 // Colors
-$julia-pink-color-old: #F1D7D7 !default;
-$julia-pink-color: #ffeeee !default;
+$julia-pink-color: #F1D7D7 !default;
+// $julia-pink-color: #ffeeee !default;
 $julia-magenta-color: #A6043F !default;
+$julia-magenta-dark-color: #6b0c2f !default;
+$julia-pink-darker-30: color.adjust($julia-pink-color, $lightness: -30%) !default;
+$julia-pink-darker-50: color.adjust($julia-pink-color, $lightness: -50%) !default;
 
 // Custom font families - Cooper font
 $font-family-sans-serif: 'Cooper', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif !default;
@@ -41,12 +44,15 @@ $grey-900: #212529;
 
 $white-color: #ffffff !default;
 $black-color: #000000 !default;
+$antique-white: #FAEBD7 !default;
 
 // Theme colors
 
 // $code-bg-color-light: rgba($purple-color, 0.05);
-$code-bg-color-light: rgba($julia-magenta-color, 0.05);
-$code-bg-color-dark: #2c3237 !default;
+// $code-bg-color-light: rgba($julia-magenta-color, 0.05);
+$code-bg-color-light: rgba($antique-white, 1) !default;
+// $code-bg-color-dark: #2c3237 !default;
+$code-bg-color-dark: rgba($julia-magenta-dark-color, 1) !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";

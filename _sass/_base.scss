@@ -4,6 +4,7 @@
 
 // Typography
 
+
 p,
 h1,
 h2,
@@ -16,6 +17,13 @@ div,
 li,
 span,
 strong {
+  color: var(--global-text-color);
+}
+
+p.desc{
+  font-size: 0.85rem;
+  margin-bottom: 1.5rem;
+  font-style: italic;
   color: var(--global-text-color);
 }
 
@@ -39,6 +47,7 @@ a,
 table.table a {
   color: var(--global-theme-color);
 
+
   &:hover {
     color: var(--global-theme-color);
     text-decoration: underline;
@@ -46,6 +55,12 @@ table.table a {
 
   &:hover:after :not(.nav-item.dropdown) {
     width: 100%;
+  }
+}
+
+p, table{
+  a {
+    font-weight: bolder;
   }
 }
 
@@ -246,7 +261,7 @@ ul.task-list input[type="checkbox"] {
 
 .navbar {
   box-shadow: none;
-  border-bottom: 1px solid var(--global-divider-color);
+  // border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
 }
@@ -309,9 +324,11 @@ ul.task-list input[type="checkbox"] {
   .navbar-brand.social {
     padding-bottom: 0;
     padding-top: 0;
+    // padding-left: 0.5rem;
     font-size: 1.7rem;
 
     a {
+      margin-left: 1rem;
       img {
         width: 1.7rem;
         height: 1.7rem;
@@ -399,17 +416,21 @@ ul.task-list input[type="checkbox"] {
 // Social (bottom)
 
 .social {
+  // margin-top: 2rem;
+  // scale: 0.8;
   text-align: center;
 
   .contact-icons {
     font-size: 4rem;
 
     a {
+      margin-right: 10px !important;
       img {
         width: 3.2rem;
         height: 3.2rem;
         margin-bottom: 1rem;
       }
+
 
       svg {
         width: 3.5rem;
@@ -438,7 +459,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .contact-note {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -716,7 +737,9 @@ footer.sticky-bottom {
 
   h2.bibliography {
     color: var(--global-divider-color);
-    border-top: 1px solid var(--global-divider-color);
+    //color: var(--white-color) !important;
+    border-top: 2px double var(--global-divider-color);
+    //border-top: 1px solid var(--global-theme-color);
     padding-top: 1rem;
     margin-top: 2rem;
     text-align: right;
@@ -799,8 +822,12 @@ footer.sticky-bottom {
           margin-left: 0;
 
           &:hover {
-            color: var(--global-theme-color);
+            // color: var(--global-theme-color);
+            // border-color: var(--global-theme-color);
+            color: var(--global-bg-color);
+            background-color: var(--global-theme-color);
             border-color: var(--global-theme-color);
+            text-decoration: none;
           }
         }
         a.award.btn {
@@ -856,11 +883,14 @@ footer.sticky-bottom {
       }
 
       div.abstract.hidden {
-        border: dashed 1px var(--global-bg-color);
+        // border: dashed 1px var(--global-bg-color);
+  
+        border-radius: 6px;
       }
 
       div.abstract.hidden.open {
-        border-color: var(--global-text-color);
+        // border-color: var(--global-text-color);
+        background-color: var(--global-card-bg-color);
       }
     }
     div.award.hidden {
@@ -893,10 +923,14 @@ pre {
 }
 
 code {
-  color: var(--global-theme-color);
+  // color: var(--global-theme-color);
+  color: var(--global-hover-text-color);
   background-color: var(--global-code-bg-color);
   border-radius: 3px;
-  padding: 3px 3px;
+  padding: 6px 6px;
+}
+code.thin {
+  padding: 2px 4px;
 }
 
 // Transitioning Themes
@@ -1418,3 +1452,4 @@ figure.cover {
     color: #23212d !important;
   }
 }
+

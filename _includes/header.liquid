@@ -21,8 +21,8 @@
           {% endif %}
         </a>
       {% elsif site.enable_navbar_social %}
-        <!-- Social Icons -->
-        <div class="navbar-brand social">{% include social.liquid %}</div>
+        <!-- OLD Social Icons -->
+        <!-- <div class="navbar-brand social">{% include social.liquid %}</div>-->
       {% endif %}
       <!-- Navbar Toggle -->
       <button
@@ -134,6 +134,9 @@
                 <i class="ti ti-sun-filled" id="light-toggle-light"></i>
               </button>
             </li>
+          {% endif %}
+          {% if site.enable_navbar_social %}
+            <div class="navbar-brand social">{% include social.liquid %}</div>
           {% endif %}
         </ul>
       </div>

@@ -2,14 +2,16 @@
 layout: about
 title: about
 permalink: /
+pronouns: she/her
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-# subtitle: Ph.D. 
+# subtitle: "she/her - [my last name]@wisc.edu"
 
 profile:
   align: right
   image: prof_pic.png
+  image_alt: A pencil sketch portrait of Julia with long hair, bangs, and earrings.
   image_circular: false # crops the image to make it circular
-  more_info: she/her
+  # more_info: she/her
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -25,13 +27,21 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a rising 2nd year _(probably)_ PhD student in computer science at the University of Wisconsin–Madison [Security & Privacy Research Group](https://madsp.cs.wisc.edu/) working with [Dr. Rahul Chatterjee](https://pages.cs.wisc.edu/~chatterjee/). 
+I'm a rising 2nd year computer science _(probably)_ PhD student at the University of Wisconsin–Madison. I'm advised by [Dr. Rahul Chatterjee](https://pages.cs.wisc.edu/~chatterjee/) in the [MadS&P](https://madsp.cs.wisc.edu/) (Security & Privacy) research group. 
 
-I'm interested in software security for everyday people, mitigations for tech-facilitated abuse and harrassment, and the commercial landscape of surveillance technology. I volunteer at the [Madison Tech Clinic](https://techclinic.cs.wisc.edu/) where we provide trauma-informed, cybersecurity assistance to survivors of intimate partner violence (IPV) around Wisconsin.
+I'm interested in software security for everyday people, including accessible cybersecurity,  mitigations for tech-facilitated abuse, and digital evidence in family law. I volunteer at the [Madison Tech Clinic](https://techclinic.cs.wisc.edu/) providing trauma-informed, cybersecurity assistance to survivors of intimate partner violence (IPV) around Wisconsin.
 
+Before UW–Madison, I did my undergrad in math and computer science at Georgetown University (and became a tech policy wonk by osmosis). I was involved with GU's [Tech & Society Initiative](https://techandsociety.georgetown.edu/) as a [Fritz Fellow](https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/). I worked with the [Massive Data Institute](https://techandsociety.georgetown.edu/) and Georgetown Law's [Center on Privacy & Technology](https://www.law.georgetown.edu/privacy-technology-center/) auditing forensic DNA analysis software systems, where I had the privilege of working with [Dr. Elissa Redmiles](https://elissaredmiles.com/). I also interned with the U.S. Office of Management and Budget, where I learned an _enormous_ amount about how to make government and its digital systems work better for the people they serve.
 
-I did my bachelor's in math and computer science at Georgetown University, where I became a tech policy wonk by osmosis. I was a [Fritz Fellow](https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/) with GU's [Tech & Society Initiative](https://techandsociety.georgetown.edu/), and I worked with the [Massive Data Institute](https://techandsociety.georgetown.edu/) and the [Center on Privacy & Technology](https://www.law.georgetown.edu/privacy-technology-center/) (Georgetown Law) auditing forensic DNA analysis software systems. I also interned at the U.S. Office of Management and Budget where I learned an enormous amount about how to make government and its digital systems work better for the people it serves.
+I spend way too much of my free time on the NYT Cooking site and not nearly enough of it implementing my saved recipes. I'm often nebulously training for a half-marathon.
 
+Email me at [my last name]@wisc.edu.
+
+<!-- <br/> -->
+<!-- ```✉️ [my last name]@wisc.edu``` -->
+<!-- <div class="callout">Email: <span style="margin:0 .5rem"/><span style="color:var(--global-theme-color)">[my last name]@wisc.edu</span></div> -->
+<!-- <div class="callout">Email: <span style="margin:0 .25rem"/>[my last name]@wisc.edu</div> -->
+<!-- <div class="callout">Email:</div> ```[my last name]@wisc.edu``` -->
 <!-- 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 

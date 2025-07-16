@@ -1,18 +1,20 @@
 ---
 ---
 
-@article{hiddenInPlainBytes,
+@inproceedings{hiddenInPlainBytes,
   author    = {Julia Nonnenkamp and Naman Gupta and Abhimanyu Gupta and Rahul Chatterjee},
+  oldtitle     = {<code class="thin">[Working Title]</code><br/>Hidden in Plain Bytes: Investigating Interpersonal Account Compromise with Data Exports},
   title    = {[Working Title] — Hidden in Plain Bytes: Investigating Interpersonal Account Compromise with Data Exports},
-  journal = {ACM CCS},
+  booktitle = {Proceedings of the 2025 ACM SIGSAC Conference on Computer and Communications Security (CCS)},
+  oldbooktitle = {ACM CCS},
   series = {ACM CCS},
   year      = {2025},
   month = {October},
   address   = {Taipei, Taiwan},
   publisher = {ACM},
-  note      = {Accepted manuscript. To appear.},
+  note      = {Accepted manuscript, to appear.},
   selected = {true},
-  abstract   = {
+  noabstract   = {
     When survivors of technology-facilitated abuse suspect unauthorized access to their online accounts, they (and advocates supporting them) 
     often rely on built-in security interfaces, such as trusted device lists, to identify account compromise. However, these interfaces typically 
     offer limited or ambiguous details about past access and security-critical events. Under right-of-access provisions in data protection laws, 
