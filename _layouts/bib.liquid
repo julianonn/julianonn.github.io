@@ -192,8 +192,8 @@
           {%- if entry.award_name %}{{ entry.award_name }}{% else %}Awarded{% endif -%}
         </a>
       {% endif %}
-      {% if entry.abstract %}
-        <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+{% if entry.abstract %}
+        <a class="abstract btn btn-sm z-depth-0" role="button" aria-controls="abstract-{{ entry.key }}" aria-expanded="false" tabindex="0">Abstract</a>
       {% endif %}
       {% if entry.doi %}
         <a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0" role="button">DOI</a>
@@ -348,7 +348,7 @@
 
     {% if entry.abstract %}
       <!-- Hidden abstract block -->
-      <div class="abstract hidden">
+      <div class="abstract hidden" id="abstract-{{ entry.key }}" aria-hidden="true">
         <p>{{ entry.abstract }}</p>
       </div>
     {% endif %}

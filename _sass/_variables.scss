@@ -6,9 +6,10 @@
 @use "sass:color";
 
 // Colors
-$julia-pink-color: #F1D7D7 !default;
+$julia-pink-color: #F4E2E2 !default;
 // $julia-pink-color: #ffeeee !default;
-$julia-magenta-color: #A6043F !default;
+// $julia-magenta-color: #A6043F !default;
+$julia-magenta-color: #950439 !default;   // should have a 7:1 ratio w/ julia-pink-color
 $julia-magenta-dark-color: #6b0c2f !default;
 $julia-pink-darker-30: color.adjust($julia-pink-color, $lightness: -30%) !default;
 $julia-pink-darker-50: color.adjust($julia-pink-color, $lightness: -50%) !default;

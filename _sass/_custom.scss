@@ -1,3 +1,27 @@
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  z-index: 1000;
+  background: #fff;
+  color: #000;
+  padding: 8px 16px;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.skip-link:focus, .skip-link:active {
+  left: 16px;
+  top: 16px;
+  width: auto;
+  height: auto;
+  outline: 2px solid #005fcc;
+  outline-offset: 2px;
+}
+
+
 // Pronouns styling in about page header
 .pronouns {
   margin-left: 0.5em;
@@ -186,3 +210,9 @@ h2 {
 //   font-weight: 700; // Use Cooper Bold for headings
 //   color: $julia-magenta-color;
 // }
+
+a:focus, button:focus, .nav-link:focus, .dropdown-item:focus {
+  outline: 2px solid var(--global-theme-color);
+  border-radius: 4px;
+  outline-offset: 2px;
+}
