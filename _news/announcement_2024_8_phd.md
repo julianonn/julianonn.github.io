@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I started my MS/PhD at UW-Madison!
+I started my MS/PhD at UW-Madison.

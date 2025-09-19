@@ -211,8 +211,27 @@ h2 {
 //   color: $julia-magenta-color;
 // }
 
+// a:focus, button:focus, .nav-link:focus, .dropdown-item:focus {
+//   background-color: var(--global-theme-color) !important;
+//   color: var(--global-bg-color) !important;
+//   outline: none;
+//   border-radius: 4px;
+//   // padding: 1px 2px;
+//   // outline-offset: 1px;
+//   text-decoration: none !important;
+//   transition: none !important;
+// }
+
+// /* Target Font Awesome icons ::before pseudo-element for focus - matches hover behavior */
+// .social .contact-icons a:focus i::before,
+// a:focus i::before,
+// button:focus i::before,
+// .nav-link:focus i::before,
+// .dropdown-item:focus i::before {
+//   color: var(--global-bg-color) !important;
+// }
+
+
 a:focus, button:focus, .nav-link:focus, .dropdown-item:focus {
-  outline: 2px solid var(--global-theme-color);
-  border-radius: 4px;
-  outline-offset: 2px;
+  text-decoration: underline !important;
 }

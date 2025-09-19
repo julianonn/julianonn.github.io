@@ -328,7 +328,8 @@ ul.task-list input[type="checkbox"] {
     font-size: 1.7rem;
 
     a {
-      margin-left: 1rem;
+      margin-left: .8rem;
+      padding: 1px 3px;
       img {
         width: 1.7rem;
         height: 1.7rem;
@@ -425,6 +426,8 @@ ul.task-list input[type="checkbox"] {
 
     a {
       margin-right: 10px !important;
+      padding-left: 8px;
+      padding-right: 8px;
       img {
         width: 3.2rem;
         height: 3.2rem;
@@ -737,8 +740,9 @@ footer.sticky-bottom {
 
   h2.bibliography {
     color: var(--global-divider-color);
+   // color: var(--global-theme-color);
     //color: var(--white-color) !important;
-    border-top: 2px double var(--global-divider-color);
+    // border-top: 2px double var(--global-divider-color);
     //border-top: 1px solid var(--global-theme-color);
     padding-top: 1rem;
     margin-top: 2rem;
