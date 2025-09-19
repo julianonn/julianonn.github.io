@@ -24,12 +24,15 @@ ninja.data = [{
             window.location.href = "/cv/";
           },
         },{id: "news-i-started-my-ms-phd-at-uw-madison",
-          title: 'I started my MS/PhD at UW-Madison!',
+          title: 'I started my MS/PhD at UW-Madison.',
           description: "",
           section: "News",},{id: "news-our-lab-attended-the-midwest-security-workshop-at-purdue",
           title: 'Our lab attended the Midwest Security Workshop at Purdue.',
           description: "",
           section: "News",},{id: "news-our-paper-about-identifying-tech-abuse-in-gdpr-data-exports-got-accepted-to-acm-ccs-2025",
           title: 'Our paper about identifying tech abuse in GDPR data exports got accepted to...',
+          description: "",
+          section: "News",},{id: "news-i-m-co-organizing-the-mads-amp-amp-p-seminar-this-year-interested-in-being-a-guest-speaker-email-me",
+          title: 'I’m co-organizing the MadS&amp;amp;amp;P Seminar this year. Interested in being a guest speaker?...',
           description: "",
           section: "News",},];
