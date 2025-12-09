@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper about identifying tech abuse in GDPR data exports got accepted to ACM CCS 2025!
+Our paper about identifying account compromise using GDPR data exports got accepted to ACM CCS 2025!
