@@ -38,4 +38,7 @@ ninja.data = [{
           section: "News",},{id: "news-i-presented-our-paper-hidden-in-plain-bytes-at-acm-ccs-in-taipei",
           title: 'I presented our paper, Hidden in Plain Bytes, at ACM CCS in Taipei....',
           description: "",
+          section: "News",},{id: "news-i-gave-a-talk-about-the-madison-tech-clinic-at-uchicago-s-first-ever-tech-for-good-conference-very-grateful-to-the-organizers-for-putting-it-together",
+          title: 'I gave a talk about the Madison Tech Clinic at UChicago’s first ever...',
+          description: "",
           section: "News",},];
