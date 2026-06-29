@@ -155,12 +155,12 @@ h2 {
   }
 
   .profile-contact {
-    text-align: center !important; // Center contact info on mobile
+    width: fit-content;
+    margin: 0 auto 2rem auto !important; // Center the block itself
     padding-left: 0 !important;
-    margin-bottom: 2rem;
     
     div {
-      justify-content: center !important;
+      justify-content: flex-start !important; // Keep items left-aligned inside
     }
   }
 }
@@ -236,4 +236,21 @@ h2 {
 
 a:focus, button:focus, .nav-link:focus, .dropdown-item:focus {
   text-decoration: underline !important;
+}
+
+.callout-box {
+  background-color: floralwhite;
+  border: 1.5px solid var(--global-theme-color);
+  // border: 3px dotted var(--global-theme-color);
+  padding: 16px 20px;
+  margin-top: 0;
+  margin-bottom: 40px;
+  border-radius: 16px;
+  color: var(--global-text-color);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.about-layout ol.bibliography li {
+  margin-bottom: 2.5rem; /* Increased spacing between papers on homepage only */
 }
