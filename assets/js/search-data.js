@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-news",
+          title: "news",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/news/";
+          },
+        },{id: "nav-publications",
           title: "publications",
           description: "",
           section: "Navigation",
@@ -40,5 +47,8 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-gave-a-talk-about-the-madison-tech-clinic-at-uchicago-s-first-ever-tech-for-good-conference-very-grateful-to-the-organizers-for-putting-it-together",
           title: 'I gave a talk about the Madison Tech Clinic at UChicago’s first ever...',
+          description: "",
+          section: "News",},{id: "news-very-excited-that-our-paper-on-accessible-security-notifications-led-by-the-wonderful-hailey-johnson-is-conditionally-accepted-to-assets-2026",
+          title: 'Very excited that our paper on accessible security notifications (led by the wonderful...',
           description: "",
           section: "News",},];
