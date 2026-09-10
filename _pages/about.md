@@ -28,7 +28,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a 2nd year computer science PhD student at the University of Wisconsin–Madison advised by [Dr. Rahul Chatterjee](https://pages.cs.wisc.edu/~chatterjee/) in the [MadS&P](https://madsp.cs.wisc.edu/) (Security & Privacy) research group. 
+I'm a 3rd year computer science PhD student at the University of Wisconsin–Madison advised by [Dr. Rahul Chatterjee](https://pages.cs.wisc.edu/~chatterjee/) in the [MadS&P](https://madsp.cs.wisc.edu/) (Security & Privacy) research group. 
 Previously, I did my undergrad in math and computer science at Georgetown University, where I was a [Fritz Fellow](https://techandsociety.georgetown.edu/projects/fritz-family-fellows-program/) with GU's [Tech & Society Initiative](https://techandsociety.georgetown.edu/) and had the privilege of working with [Dr. Elissa Redmiles](https://elissaredmiles.com/) and [Dr. Lisa Singh](https://people.cs.georgetown.edu/~singh/) through the [Massive Data Institute](https://mdi.georgetown.edu/) and Georgetown Law's [Center on Privacy & Technology](https://www.law.georgetown.edu/privacy-technology-center/). 
 
-I'm interested in software security & authentication for everyday people, including mitigations for tech-facilitated abuse, digital evidence in family law, and accessibility. I volunteer at the [Madison Tech Clinic](https://techclinic.cs.wisc.edu/) providing trauma-informed cybersecurity assistance to survivors of intimate partner violence around Wisconsin. I spend way too much of my free time on the NYT Cooking site and not nearly enough of it implementing my saved recipes. 
+I'm interested in making software security & authentication better for everyday people by building and evaluating systems. 
+Much of my work focuses on unique considerations that arise in shared home environments and for users experiencing tech-facilitated interpersonal violence. 
+
+I am the director of the [Madison Tech Clinic](https://techclinic.cs.wisc.edu/), a volunteer initiative that provides trauma-informed cybersecurity assistance to survivors of intimate partner violence around Wisconsin. I spend way too much of my free time on the NYT Cooking site and not nearly enough of it implementing my saved recipes. 
