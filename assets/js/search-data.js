@@ -48,7 +48,10 @@ ninja.data = [{
           section: "News",},{id: "news-i-gave-a-talk-about-the-madison-tech-clinic-at-uchicago-s-first-ever-tech-for-good-conference-very-grateful-to-the-organizers-for-putting-it-together",
           title: 'I gave a talk about the Madison Tech Clinic at UChicago’s first ever...',
           description: "",
-          section: "News",},{id: "news-very-excited-that-our-paper-on-accessible-security-notifications-led-by-the-wonderful-hailey-johnson-is-conditionally-accepted-to-assets-2026",
+          section: "News",},{id: "news-very-excited-that-our-paper-on-accessible-security-notifications-led-by-the-wonderful-hailey-johnson-is-accepted-to-assets-2026",
           title: 'Very excited that our paper on accessible security notifications (led by the wonderful...',
+          description: "",
+          section: "News",},{id: "news-i-presented-a-poster-on-our-data-export-work-at-grepsec-usenix-security",
+          title: 'I presented a poster on our data export work at GREPSEC @ USENIX...',
           description: "",
           section: "News",},];
