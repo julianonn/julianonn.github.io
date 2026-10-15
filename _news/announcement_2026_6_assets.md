@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Very excited that our paper on accessible security notifications (led by the wonderful [Hailey Johnson](https://haileyljohnson.github.io/)) is accepted to ASSETS 2026!
+Very excited that [our paper](https://arxiv.org/abs/2610.02374) on accessible security notifications (led by the wonderful [Hailey Johnson](https://haileyljohnson.github.io/)) is accepted to ASSETS 2026!

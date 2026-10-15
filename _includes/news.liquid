@@ -21,18 +21,18 @@
             <td>
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+              {% comment %} {% else %}
+                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a> {% endcomment %}
               {% endif %}
             </td>
           </tr>
         {% endfor %}
       </table>
-      {% if include.limit and news_size > news_limit %}
-        <div style="text-align: right; margin-top: 10px;">
+      {% comment %} {% if include.limit and news_size > news_limit %}
+        <div class="see-more">
           <a href="{{ '/news/' | relative_url }}">(see more...)</a>
         </div>
-      {% endif %}
+      {% endif %} {% endcomment %}
     </div>
   {% else %}
     <p>No news so far...</p>

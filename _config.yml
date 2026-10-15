@@ -46,7 +46,7 @@ repo_trophies:
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 search_enabled: false
 socials_in_search: false
 posts_in_search: false
@@ -308,6 +308,7 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    archival,
     google_scholar_id,
     html,
     inspirehep_id,
