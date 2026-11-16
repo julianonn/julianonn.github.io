@@ -57,4 +57,7 @@ ninja.data = [{
           section: "News",},{id: "news-uw-madison-hosted-the-midwest-security-workshop-this-month-our-data-export-paper-is-also-a-finalist-for-the-csaw-applied-research-competition-at-nyu-next-month",
           title: 'UW-Madison hosted the Midwest Security Workshop this month. Our data export paper is...',
           description: "",
+          section: "News",},{id: "news-our-ccs-25-paper-was-runner-up-for-the-best-social-impact-award-at-nyu-s-csaw-arc-out-of-over-a-hundred-papers",
+          title: 'Our CCS ‘25 paper was runner up for the best social impact award...',
+          description: "",
           section: "News",},];
