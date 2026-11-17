@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'jekyll'
+gem 'activesupport', '>= 8.0.5.2'  # security floor (Dependabot)
 
 # Core plugins that directly affect site building
 group :jekyll_plugins do
